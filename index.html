@@ -20,17 +20,17 @@
                 <legend>Faça parte do Nosso time</legend>
                 <!--Esta parte do código recebe as informações pessoais-->
                 <p><label for="nome">Nome*</label>
-                    <input id="nome" type="text" min="1" max="300" name="nome" size="20" placeholder="Digite seu Primeiro Nome"></p>
-                <p><label for="sobrenome" id="nome">Sobrenome*</label>
-                    <input id="txt" type="text" min="1" max="300" required="tex" name="nome" size="40" placeholder="Digite seu sobrenome"></p>
+                    <input id="nome" type="text" min="1" max="300" name="nome" size="20" placeholder="Digite seu Primeiro Nome" required="tex"></p>
+                <p><label for="sobrenome">Sobrenome*</label>
+                    <input id="sobrenome" type="text" min="1" max="300" required="tex" name="sobrenome" size="40" placeholder="Digite seu sobrenome"></p>
 
                 <legend>Sexo</legend>
                 <p>
-                    <input type="radio" required="radio" name="sexo">
+                    <input type="radio" required="radio" name="sexo" id="sexo">
                     <label id="sx" for="Masculino">Masculino</label>
                     <input type="radio" required="radio" name="sexo">
                     <label for="Feminino">Feminino</label>
-                    <input type="radio" required="radio" name="sexo">
+                    <input type="radio" required="radio" name="sexo" checked>
                     <label id="nd" for="nd">Prefiro não declarar</label></p>
 
 
@@ -38,9 +38,9 @@
                     <input id="txt" type="date" required="date" name="nascimento"></input>
                 </p>
                 <p><label for="rg">RG</label>
-                    <input id="txt" type="text" min="1" max="10" required="tex" name="nome" size="8" placeholder="Sem o digito"><label for="rg">Digito</label><input id="txt" type="text" min="1" max="1" required="tex" name="nome" size="1" placeholder="Digito"></p>
+                    <input id="rg" type="text" min="1" max="10" required="tex" name="rg" size="8" placeholder="Sem o digito"><label for="rg_digito">Digito</label><input id="rg_digito" type="text" min="1" max="1" required="tex" name="nome" size="1" placeholder="Digito"></p>
                 <p><label for="cpf">CPF*</label>
-                    <input id="txt" type="text" min="1" max="11" required="tex" name="cpf" size="12" placeholder="Somente Números"></p>
+                    <input id="cpf" type="text" min="1" max="11" required="text" name="cpf" size="12" placeholder="Somente Números"></p>
                 <!--Este trecho do códgio destina se ao endereço-->
                 <fieldset>
                     <legend>Endereço</legend>
@@ -110,7 +110,7 @@
 
 
                 </fieldset>
-                <input type="button" value="Enviar" onclick="enviar();">
+                <input type="submit" value="Enviar" onclick="enviar();">
 
             </fieldset>
         </form>
