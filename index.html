@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1></h1>
+    </header>
+
+    <div>
+        <!--Este methodo envia para o e-mail os dados cadastrados-->
+        <form method="post" action="mailto:brunorrrossi@gmail.com">
+            <fieldset>
+                <legend>Faça parte do Nosso time</legend>
+                <p><label for="nome">Nome</label>
+                    <input id="txt" type="text" min="1" max="300" required="tex" name="nome" size="40" placeholder="Digite seu Nome aqui"></p>
+
+                <p><label for="nascimento">Data de Nascimeto</label>
+                    <input id="txt" type="date" required="date" name="nascimento"></input>
+                </p>
+
+                <p><label for="cidade">Cidade</label>
+                    <input id="txt" type="text" required="text" name="cidade" placeholder="Ex:São Paulo"></p>
+
+
+                <p><label>UF</label>
+                    <select name="estadosdoBrasil" size="1">
+                      <option>AC</option>
+                      <option>AL</option>
+                      <option>AM</option>
+                      <option>AP</option>
+                      <option>BA</option>
+                      <option>CE</option>
+                      <option>DF</option>
+                      <option>ES</option>
+                      <option>GO</option>
+                      <option>MA</option>
+                      <option>MG</option>
+                      <option>MS</option>
+                      <option>MT</option>
+                      <option>PA</option>
+                      <option>PB</option>
+                      <option>PE</option>
+                      <option>PI</option>
+                      <option>PR</option>
+                      <option>RJ</option>
+                      <option>RN</option>
+                      <option>RO</option>
+                      <option>RR</option>
+                      <option>RS</option>
+                      <option>SC</option>
+                      <option>SE</option>
+                      <option>SP</option>
+                    </select></p>
+            </fieldset>
+            <fieldset id="sexo">
+                <legend>Sexo</legend>
+                <p>
+                    <input type="radio" required="radio" name="sexo">
+                    <label id="sx" for="Masculino">Masculino</label>
+                    <input type="radio" required="radio" name="sexo">
+                    <label for="Feminino">Feminino</label></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Envie sua mensagem</legend>
+
+                <p><label>E-mail</label>
+                    <input id="txt" type="email" required="email" name="email" placeholder="digite seu e-mail"> </p>
+
+                <p><label for="senha">Senha</label>
+                    <input id="txt" type="password" required="text" placeholder="Ex:Alpha125">
+                </p>
+
+
+                <input id="receber" type="checkbox" name="receber_info" checked>
+                <label id="receber1">Deseja receber nossas novidades</label>
+                </p>
+            </fieldset>
+            <input id="enviar" type="submit" name="Enviar" value="Enviar" />
+            <input id="enviar" type="reset" value="Apagar Campos">
+
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+
+</html>
