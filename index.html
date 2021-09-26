@@ -15,13 +15,13 @@
 
     <div>
         <!--Este methodo envia para o e-mail os dados cadastrados-->
-        <form method="post" action="mailto:brunorrrossi@gmail.com">
+        <form name="formulario" method="post" action="mailto:brunorrrossi@gmail.com" onsubmit="enviar();">
             <fieldset>
                 <legend>Faça parte do Nosso time</legend>
                 <!--Esta parte do código recebe as informações pessoais-->
-                <p><label for="nome">Nome</label>
-                    <input id="txt" type="text" min="1" max="300" required="tex" name="nome" size="20" placeholder="Digite seu Primeiro Nome"></p>
-                <p><label for="nome">Sobrenome</label>
+                <p><label for="nome">Nome*</label>
+                    <input id="nome" type="text" min="1" max="300" name="nome" size="20" placeholder="Digite seu Primeiro Nome"></p>
+                <p><label for="sobrenome" id="nome">Sobrenome*</label>
                     <input id="txt" type="text" min="1" max="300" required="tex" name="nome" size="40" placeholder="Digite seu sobrenome"></p>
 
                 <legend>Sexo</legend>
@@ -39,28 +39,28 @@
                 </p>
                 <p><label for="rg">RG</label>
                     <input id="txt" type="text" min="1" max="10" required="tex" name="nome" size="8" placeholder="Sem o digito"><label for="rg">Digito</label><input id="txt" type="text" min="1" max="1" required="tex" name="nome" size="1" placeholder="Digito"></p>
-                <p><label for="cpf">CPF</label>
+                <p><label for="cpf">CPF*</label>
                     <input id="txt" type="text" min="1" max="11" required="tex" name="cpf" size="12" placeholder="Somente Números"></p>
                 <!--Este trecho do códgio destina se ao endereço-->
                 <fieldset>
                     <legend>Endereço</legend>
-                    <p><label for="rua">Logradouro</label>
+                    <p><label for="rua">Logradouro*</label>
                         <input id="txt" type="text" required="text" name="rua" placeholder="Av. Rua.Viela "></p>
-                    <p><label for="numero">N°</label>
+                    <p><label for="numero">N°*</label>
                         <input id="txt" type="text" required="text" name="numero" size="3" placeholder="Número"></p>
                     <p><label for="complemento">Complemento</label>
                         <input id="txt" type="text" required="text" name="complemento" size="15" placeholder="Casa;Apartamento"></p>
-                    <p><label for="cep">CEP</label>
+                    <p><label for="cep">CEP*</label>
                         <input id="txt" type="text" required="text" name="cep" size="13" placeholder="Somento Números"></p>
-                    <p><label for="bairro">Bairro</label>
+                    <p><label for="bairro">Bairro*</label>
                         <input id="txt" type="text" required="text" name="cep" size="20" placeholder="JD. Brasil; Cidade Ademar"></p>
 
 
-                    <p><label for="cidade">Cidade</label>
+                    <p><label for="cidade">Cidade*</label>
                         <input id="txt" type="text" required="text" name="cidade" placeholder="Ex:São Paulo"></p>
 
 
-                    <p><label>UF</label>
+                    <p><label>UF*</label>
                         <select name="estadosdoBrasil" size="1">
                       <option>AC</option>
                       <option>AL</option>
@@ -91,29 +91,33 @@
                     </select></p>
                 </fieldset>
 
-
+                <!--Refere-se aos dados cadastrais-->
                 <fieldset>
-                    <legend>Envie sua mensagem</legend>
+                    <legend>Dados para contato </legend>
+                    <p><label for="tel_residencial">Tel: Residencial DDD:* </label>
+                        <input id="txt" type="tel" required="text" name="tel_residencial" size="2" placeholder="EX:011"> N° <input id="txt" type="tel" required="text" name="tel_residencial" size="10" placeholder="Telefone Fixo">
+                    </p>
+                    <label for="celular">Tel: Celular DDD:*</label>
+                    <input id="txt" type="tel" required="text" name="cep" size="2" placeholder="EX:011"> N° <input id="txt" type="tel" required="text" name="celular" size="10" placeholder="Celular">
+                    </p>
 
                     <p><label>E-mail</label>
-                        <input id="txt" type="email" required="email" name="email" placeholder="digite seu e-mail"> </p>
-
-                    <p><label for="senha">Senha</label>
-                        <input id="txt" type="password" required="text" placeholder="Ex:Alpha125">
-                    </p>
+                        <input id="txt " type="email " required="email " name="email " placeholder="digite seu e-mail "> </p>
 
 
-                    <input id="receber" type="checkbox" name="receber_info" checked>
-                    <label id="receber1">Deseja receber nossas novidades</label>
-                    </p>
+
+
+
+
                 </fieldset>
-                <input id="enviar" type="submit" name="Enviar" value="Enviar" />
-                <input id="enviar" type="reset" value="Apagar Campos">
+                <input type="button" value="Enviar" onclick="enviar();">
 
             </fieldset>
         </form>
 
     </div>
+    <script type="text/javascript" src="validador/validacao.js"></script>
+
 </body>
 
 </html>
