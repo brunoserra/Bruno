@@ -85,18 +85,12 @@ function enviar() {
         tel.focus();
         return;
     }
-    if (email.value == "") {
-        alert("Por favor digite um email valido");
-        email.focus();
-        return;
-
-    }
-
-
 
 
     // mensagem final se tudo preenchido ok
+
     alert('Formulário enviado , Boa Sorte');
-    return;
+    return true;
+
 
 }
