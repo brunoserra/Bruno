@@ -2,8 +2,10 @@ function enviar() {
 
     var nome = document.getElementById('nome');
     var sobrenome = document.getElementById('sobrenome');
-    var rg = document.getElementsByTagName('rg');
-    var cpf = document.createElement('cpf');
+    var rg = document.getElementById('rg');
+    var cpf = document.getElementById('cpf');
+    var ld = document.getElementById('ld');
+    var cep = document.getElementById('cep');
     //esta parte valida o nome
     if (nome.value == "" ||
         nome.value.length < 3) {
@@ -35,7 +37,36 @@ function enviar() {
         return;
 
     }
-    //valida o logradouro esta preenchido
+    //valida endereço d
+    if (ld.value == "" || ld.value.length < 6) {
+        alert("Digite corretamente seu endereço");
+        ld.focus();
+        return;
+
+    }
+    if (numero.value == "" || numero.value.length < 1) {
+        alert('Digite o número da sua casa ou Apartamento');
+        numero.focus();
+        return;
+    }
+    if (cep.value == "" || cep.value.length > 8 || cep.value.length < 8) {
+        alert("Digite o CEP com 8 mumeros");
+        cep.focus();
+        return;
+
+    }
+    if (bairro.value == "" || bairro.value.length < 3) {
+        alert('Por favor digite seu Bairro');
+        bairro.focus();
+        return;
+
+    }
+    if (cidade.value == "" || cidade.value.length < 3) {
+        alert('Digite o Nome da sua cidade ');
+        cidade.focus();
+        return;
+    }
+
 
 
     // mensagem final se tudo preenchido ok
