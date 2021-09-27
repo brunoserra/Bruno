@@ -26,7 +26,7 @@ function enviar() {
     //valida rg 
     if (rg.value == "" ||
         rg.value.length < 7) {
-        alert("Digite os sete numeros do sue RG");
+        alert("Digite os sete numeros do seu RG");
         rg.focus();
         return;
 
