@@ -6,6 +6,9 @@ function enviar() {
     var cpf = document.getElementById('cpf');
     var ld = document.getElementById('ld');
     var cep = document.getElementById('cep');
+    var tel = document.getElementById('tel');
+    var cel = document.getElementById('cel');
+    var email = document.getElementById('email');
     //esta parte valida o nome
     if (nome.value == "" ||
         nome.value.length < 3) {
@@ -66,6 +69,29 @@ function enviar() {
         cidade.focus();
         return;
     }
+    if (ddd.valeu == "" || ddd.value.length < 3 || ddd.value.length > 3) {
+        alert("digite corretamente o DDD como Ex: 011");
+        ddd.focus();
+        return;
+    }
+    if (tel.valeu == "" || tel.value.length > 8 || tel.value.length < 8) {
+        alert("Digite seu telefone fixo com 8 digitos");
+        tel.focus();
+        return;
+
+    }
+    if (cel.valeu == "" || cel.value.length > 8 || cel.value.length < 8) {
+        alert("Digite seu telefone fixo com 8 digitos");
+        tel.focus();
+        return;
+    }
+    if (email.value == "") {
+        alert("Por favor digite um email valido");
+        email.focus();
+        return;
+
+    }
+
 
 
 
