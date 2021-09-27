@@ -5,63 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
     <title>Document</title>
+
 </head>
 
 <body>
-    <header>
-        <h1></h1>
-    </header>
-
-    <div>
-        <!--Este methodo envia para o e-mail os dados cadastrados-->
-        <form name="formulario" method="post" action="mailto:brunorrrossi@gmail.com" onsubmit="enviar();">
-            <fieldset>
-                <legend>Faça parte do Nosso time</legend>
-                <!--Esta parte do código recebe as informações pessoais-->
-                <p><label for="nome">Nome*</label>
-                    <input id="nome" type="text" min="1" max="300" name="nome" size="20" placeholder="Digite seu Primeiro Nome" required="tex"></p>
-                <p><label for="sobrenome">Sobrenome*</label>
-                    <input id="sobrenome" type="text" min="1" max="300" required="tex" name="sobrenome" size="40" placeholder="Digite seu sobrenome"></p>
-
-                <legend>Sexo</legend>
-                <p>
-                    <input type="radio" required="radio" name="sexo" id="sexo">
-                    <label id="sx" for="Masculino">Masculino</label>
-                    <input type="radio" required="radio" name="sexo">
-                    <label for="Feminino">Feminino</label>
-                    <input type="radio" required="radio" name="sexo" checked>
-                    <label id="nd" for="nd">Prefiro não declarar</label></p>
+    <main>
 
 
-                <p><label for="nascimento">Data de Nascimeto</label>
-                    <input id="txt" type="date" required="date" name="nascimento"></input>
-                </p>
-                <p><label for="rg">RG</label>
-                    <input id="rg" type="text" min="1" max="10" required="tex" name="rg" size="8" placeholder="Sem o digito"><label for="rg_digito">Digito</label><input id="rg_digito" type="text" min="1" max="1" required="tex" name="nome" size="1" placeholder="Digito"></p>
-                <p><label for="cpf">CPF*</label>
-                    <input id="cpf" type="text" min="11" max="11" required="text" name="cpf" size="12" placeholder="Somente Números"></p>
-                <!--Este trecho do códgio destina se ao endereço-->
+        <header>
+            <h1>Queremos ter você com a gente</h1>
+            <h3>Preencha nosso Cadastro</h3>
+        </header>
+
+        <div>
+            <!--Este methodo envia para o e-mail os dados cadastrados-->
+            <form name="formulario" method="post" action="mailto:brunorrrossi@gmail.com" onsubmit="enviar();">
                 <fieldset>
-                    <legend>Endereço</legend>
-                    <p><label for="ld">Logradouro*</label>
-                        <input id="ld" type="text" required="text" name="ld" placeholder="Av. Rua.Viela "></p>
-                    <p><label for="numero">N°*</label>
-                        <input id="numero" type="text" required="text" name="numero" size="3" placeholder="Número"></p>
-                    <p><label for="complemento">Complemento</label>
-                        <input id="txt" type="text" name="complemento" size="15" placeholder="Casa;Apartamento"></p>
-                    <p><label for="cep">CEP*</label>
-                        <input id="cep" type="text" required="text" name="cep" size="13" placeholder="Somento Números"></p>
-                    <p><label for="bairro">Bairro*</label>
-                        <input id="bairro" type="text" required="text" name="bairro" size="20" placeholder="JD. Brasil; Cidade Ademar"></p>
+                    <legend>Dados Pessoais</legend>
+                    <!--Esta parte do código recebe as informações pessoais-->
+                    <p><label for="nome">Nome*</label>
+                        <input id="nome" type="text" min="1" max="300" name="nome" size="20" placeholder="Digite seu Primeiro Nome" required="tex"></p>
+                    <p><label for="sobrenome">Sobrenome*</label>
+                        <input id="sobrenome" type="text" min="1" max="300" required="tex" name="sobrenome" size="40" placeholder="Digite seu sobrenome"></p>
+
+                    <legend>Sexo</legend>
+                    <p>
+                        <input type="radio" required="radio" name="sexo" id="sexo">
+                        <label id="sx" for="Masculino">Masculino</label>
+                        <input type="radio" required="radio" name="sexo">
+                        <label for="Feminino">Feminino</label>
+                        <input type="radio" required="radio" name="sexo" checked>
+                        <label id="nd" for="nd">Prefiro não declarar</label></p>
 
 
-                    <p><label for="cidade">Cidade*</label>
-                        <input id="txt" type="text" required="text" name="cidade" placeholder="Ex:São Paulo"></p>
+                    <p><label for="nascimento">Data de Nascimeto</label>
+                        <input id="txt" type="date" required="date" name="nascimento"></input>
+                    </p>
+                    <p><label for="rg">RG</label>
+                        <input id="rg" type="text" min="1" max="10" required="tex" name="rg" size="8" placeholder="Sem o digito"><label for="rg_digito">Digito</label><input id="rg_digito" type="text" min="1" max="1" required="tex" name="nome" size="1"
+                            placeholder="Digito"></p>
+                    <p><label for="cpf">CPF*</label>
+                        <input id="cpf" type="text" min="11" max="11" required="text" name="cpf" size="12" placeholder="Somente Números"></p>
+                    <!--Este trecho do códgio destina se ao endereço-->
+                    <fieldset>
+                        <legend>Endereço</legend>
+                        <p><label for="ld">Logradouro*</label>
+                            <input id="ld" type="text" required="text" name="ld" placeholder="Av. Rua.Viela "></p>
+                        <p><label for="numero">N°*</label>
+                            <input id="numero" type="text" required="text" name="numero" size="3" placeholder="Número"></p>
+                        <p><label for="complemento">Complemento</label>
+                            <input id="txt" type="text" name="complemento" size="15" placeholder="Casa;Apartamento"></p>
+                        <p><label for="cep">CEP*</label>
+                            <input id="cep" type="text" required="text" name="cep" size="13" placeholder="Somento Números"></p>
+                        <p><label for="bairro">Bairro*</label>
+                            <input id="bairro" type="text" required="text" name="bairro" size="20" placeholder="JD. Brasil; Cidade Ademar"></p>
 
 
-                    <p><label>UF*</label>
-                        <select name="estadosdoBrasil" size="1">
+                        <p><label for="cidade">Cidade*</label>
+                            <input id="txt" type="text" required="text" name="cidade" placeholder="Ex:São Paulo"></p>
+
+
+                        <p><label>UF*</label>
+                            <select name="estadosdoBrasil" size="1">
                       <option>AC</option>
                       <option>AL</option>
                       <option>AM</option>
@@ -89,34 +96,35 @@
                       <option>SE</option>
                       <option>SP</option>
                     </select></p>
+                    </fieldset>
+
+                    <!--Refere-se aos dados cadastrais-->
+                    <fieldset>
+                        <legend>Dados para contato </legend>
+                        <p><label for="tel_residencial">Tel: Residencial DDD:* </label>
+                            <input id="ddd" type="tel" required="text" name="tel_residencial" size="2" placeholder="EX:011"> N° <input id="tel" type="tel" required="text" name="tel_residencial" size="10" placeholder="Telefone Fixo">
+                        </p>
+                        <label for="celular">Tel: Celular DDD:*</label>
+                        <input id="ddd" type="tel" required="text" name="cep" size="2" placeholder="EX:011"> N° <input id="cel" type="tel" required="text" name="celular" size="10" placeholder="Celular">
+                        </p>
+
+                        <p><label>E-mail</label>
+                            <input id="email " type="email " required="email " name="email " placeholder="digite seu e-mail "> </p>
+
+
+
+
+
+
+                    </fieldset>
+                    <input id="botao" type="submit" alue="Enviar" onclick="enviar();">
+
                 </fieldset>
+            </form>
 
-                <!--Refere-se aos dados cadastrais-->
-                <fieldset>
-                    <legend>Dados para contato </legend>
-                    <p><label for="tel_residencial">Tel: Residencial DDD:* </label>
-                        <input id="ddd" type="tel" required="text" name="tel_residencial" size="2" placeholder="EX:011"> N° <input id="tel" type="tel" required="text" name="tel_residencial" size="10" placeholder="Telefone Fixo">
-                    </p>
-                    <label for="celular">Tel: Celular DDD:*</label>
-                    <input id="ddd" type="tel" required="text" name="cep" size="2" placeholder="EX:011"> N° <input id="cel" type="tel" required="text" name="celular" size="10" placeholder="Celular">
-                    </p>
-
-                    <p><label>E-mail</label>
-                        <input id="email " type="email " required="email " name="email " placeholder="digite seu e-mail "> </p>
-
-
-
-
-
-
-                </fieldset>
-                <input type="submit" value="Enviar" onclick="enviar();">
-
-            </fieldset>
-        </form>
-
-    </div>
-    <script type="text/javascript" src="validador/validacao.js"></script>
+        </div>
+        <script type="text/javascript" src="validador/validacao.js"></script>
+    </main>
 
 </body>
 
